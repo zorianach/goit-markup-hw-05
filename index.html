@@ -666,28 +666,29 @@
             <label class="modal-form-label" for="user-comment"> Comment</label>
             <textarea
               class="modal-form-textarea"
-              name="user_comment"
+              name="user-comment"
               rows="7"
               placeholder="Text input"
               id="user-comment"
             ></textarea>
           </div>
-          <div>
-            <label class="modal-form-agreement">
-              <input
-                class="modal-form-checkbox visually-hidden"
-                type="checkbox"
-                name="policy_agreement"
-                required
-              />
+          <div class="checkbox-container">
+            <input
+              class="modal-form-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+            <label class="modal-form-agreement" for="user-privacy">
               <span class="modal-form-custom-checkbox">
-                <svg class="modal-form-checkbox-icon" width="16" height="16">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#checkbox"></use>
                 </svg>
               </span>
-              <span class="modal-form-agreement-desc">
-                I accept the terms and conditions of the
-                <a class="modal-form-link" href="">Privacy Policy</a></span
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
               >
             </label>
           </div>
